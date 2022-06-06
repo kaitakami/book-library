@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Library</title>
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="styles/normalizer.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Outfit:wght@700&display=swap"
+        rel="stylesheet">
+    <!-- FONTAWESOME -->
+    <script src="https://kit.fontawesome.com/1b95a12645.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="nav">
+            <h1 class="nav__title">Library</h1>
+            <div class="nav__icons">
+                <a href="https://github.com/kaitakami/" target="_blank"><i class="fa-brands fa-github-alt nav__icon icon"></i></a>
+                <a href="https://github.com/kaitakami/" target="_blank"><i class="fa-solid fa-code nav__icon icon"></i></a>
+            </div>
+        </nav>
+        <main class="main">
+            <div class="main__container">
+                <div class="card">
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/41a4YqyJv4S._SX258_BO1,204,203,200_.jpg" alt="" class="book__image">
+                    <span class="card__color"></span>
+                    <div class="card__content">
+                        <h3 class="book-title card__text">Title: Felipe</h3>
+                        <p class="book-author card__text">Author: Rodrigo</p>
+                        <p class="book-pages card__text">Pages: 384</p>
+                        <p class="read card__text">Read:✅</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fbalka-book.com%2Ffiles%2F2017%2F06_07%2F08_27%2Fu_files_store_3_344867.jpg&f=1&nofb=1" alt="" class="book__image">
+                    <span class="card__color"></span>
+                    <div class="card__content">
+                        <h3 class="book-title card__text">Title: Felipe</h3>
+                        <p class="book-author card__text">Author: Rodrigo</p>
+                        <p class="book-pages card__text">Pages: 384</p>
+                        <p class="read card__text">Read:✅</p>
+                    </div>
+                </div>
+            </div>
+            <button class="add-button"><i class="fa-solid fa-plus"></i></button>
+        </main>
+        <!-- INPUT CARD -->
+        <div class="input-card">
+            <form>
+                <button class="close-button"><i class="fa-solid fa-xmark"></i></button>
+                <label for="name">Book's name</label>
+                <input type="text" class="input-name input" required>
+                <label for="">Author's name</label>
+                <input type="text" class="input-author input">
+                <label for="pages">Number of pages</label>
+                <input type="number" class="input-pages input" required>
+                <label for="image">Book's cover url</label>
+                <input type="url" class="input-image input">
+                <label for="color">Select a color</label>
+                <input type="color" class="input-color input">
+                <button class="submit-button" type="submit">Add book</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
