@@ -1,13 +1,15 @@
 let myLibrary = [];
 
 // Function constructor
-function Book(title, author, pages, color) {
-    this.title = title;
-    this.author = author;
-    this.pages = pages;
-    this.color = color;
+class Book {
+    constructor(title, author, pages, color) {
+        this.title = title;
+        this.author = author;
+        this.pages = pages;
+        this.color = color;
+    }
 }
-
+    
 // The magic
 function addBookToLibrary() {
     const title = nameInput.value;
