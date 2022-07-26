@@ -32,21 +32,21 @@
             <div class="main__container">
                 <!-- CARD CONTAINER -->
             </div>
-            <button class="add-button"><i class="fa-solid fa-plus"></i></button>
+            <button class="button-icon add-button"><i class="fa-solid fa-plus"></i></button>
         </main>
         <!-- INPUT CARD -->
         <div class="input-card">
             <form>
                 <button class="close-button"><i class="fa-solid fa-xmark"></i></button>
                 <label for="name">Book's name</label>
-                <input type="text" class="input-name input" required>
+                <input type="text" class="input-name input" required pattern="[A-Za-z]+">
                 <label for="">Author's name</label>
                 <input type="text" class="input-author input">
                 <label for="pages">Number of pages</label>
-                <input type="number" class="input-pages input" required>
+                <input type="number" class="input-pages input" required min="1">
                 <label for="color">Select a color</label>
                 <input type="color" class="input-color input">
-                <button class="submit-button" type="submit">Add book</button>
+                <button class="button-icon submit-button" type="submit">Add book</button>
             </form>
         </div>
     </div>
